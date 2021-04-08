@@ -1,16 +1,16 @@
-import React from 'react'
-import { FC } from 'react'
+import React from 'react';
+import { FC } from 'react';
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
-const Layout: FC<Props> = ({ children }) => {
+const Layout: FC<Props> = ( { children } ) => {
   return (
     <div>
       Layout
-      {children}
+      { children }
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

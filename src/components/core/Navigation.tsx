@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Navigation = () => {
   return (
     <div>
       导航组件
     </div>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
