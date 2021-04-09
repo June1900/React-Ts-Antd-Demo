@@ -2,7 +2,7 @@ import { Button, Form, Input, Result } from 'antd';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { signUp, SignUpPayload } from '../../store/actions/auth.action';
+import { resetSignUp, signUp, SignUpPayload } from '../../store/actions/auth.action';
 import { AppState } from '../../store/reducers';
 import { AuthState } from '../../store/reducers/auth.reducer';
 import Layout from './Layout';
@@ -55,7 +55,7 @@ const SignUp = () => {
   // 离开页面，重置状态
   useEffect( () => {
     return () => {
-
+      dispatch(resetSignUp());
     };
   }, [] );
 
